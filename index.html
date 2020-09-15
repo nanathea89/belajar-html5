@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+
+	<title>Hello, world!</title>
+	<style>
+		section {
+			background-color: rgb(31, 119, 119);
+			border-collapse: collapse;
+			border: 10px;
+			border-color: blueviolet;
+			border-radius: 5px;
+			padding: 20px;
+			width: 30%;
+			color: cornsilk;
+			font-size: 12px;
+
+		}
+
+		section input {
+			padding: 5px;
+		}
+
+		datalist {
+			padding: 5px;
+			border-bottom: darkgoldenrod;
+		}
+	</style>
+</head>
+
+<body id="page-top">
+	<!-- <h1>Hello, world!</h1> -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+		<a class="navbar-brand"></a>
+	</nav>
+	<!-- link menu -->
+	<section>
+		<form method="get" autocomplete="on" oninput="x.value=parseInt(a.value)">
+			<fieldset>
+				<legend>Formulis</legend>
+				0 <input type="range" name="a" id="a" value="50">100<br><br>
+				Nilai : <output name="x"></output><br>
+
+				Label 1 <input type="text" name="text1" id="text1" placeholder="type your name"><br>
+				<label for="text2">Label 2</label> <input type="text" name="text2" id="text2"
+					placeholder="type your last name"><br>
+				<strong>Hobi</strong><br>
+				<label for="checkbox">Membaca</label><input type="checkbox" name="checkbox" id="checkbox"
+					value="Membaca">
+				<label for="checkbox1">Renang</label><input type="checkbox" name="checkbox1" id="checkbox1"
+					value="Renang"><br>
+				<strong>Jenis Kelamin</strong>
+				<input type="radio" name="jk" value="Laki Laki" id="laki_laki"><label for="laki_laki">Laki Laki</label>
+				<input type="radio" name="jk" value="Perempuan" id="perempuan"><label for="perempuan">Perempuan</label>
+				<br>
+				<label for="dept">Departement</label>
+				<select id="dept" name="dept" size="3" multiple>
+					<option value="IT">IT</option>
+					<option value="MKT">Marketing</option>
+					<option value="GS">GS</option>
+					<option value="HR">Human Capital</option>
+				</select><br>
+			</fieldset>
+
+			<label for="textarea">Alamat</label>
+			<textarea id="textarea" name="alamat" rows="4" cols="30"></textarea><br>
+			<button type="button" name="click" onclick="alert('hallo')">Click</button>
+			<br>
+			<label for="cari">Cari Member</label>
+			<input type="text" name="cari" list="cari">
+			<datalist id="cari">
+				<option value="Nana">
+				<option value="Irfan"></option>
+				<option value="Farhan"></option>
+				<option value="Nani"></option>
+				<option value="Irhas"></option>
+			</datalist>
+		</form>
+	</section>
+
+	</nav>
+	<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top">Global Loyalty Indonesia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Daftar</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Tutorial
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Bootstrap</a>
+                <a class="dropdown-item" href="#">Codeigniter</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Other</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link disabled"
+                href="#"
+                tabindex="-1"
+                aria-disabled="true"
+                >Hai, Nana Mulyana</a
+              >
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+	</nav> -->
+	<div class="main">
+		<address>Jl. Kisaniin Kp. Priyang Rt. 7 2</address>
+		<strong>ini strong</strong><b>ini bol</b>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
